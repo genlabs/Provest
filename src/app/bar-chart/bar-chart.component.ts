@@ -23,7 +23,7 @@ export class BarChartComponent implements OnInit {
       };
 
     private barChartData:any[] = [
-        {data:[], label: 'accumulated interest gain'}
+        {data:[], label: 'Accumulated interest gain (base on 100k investment)'}
     ];
     private barChartLabels:string[] = [];
     private barChartLegend:boolean = true;
@@ -43,13 +43,22 @@ export class BarChartComponent implements OnInit {
         let initCap = m.pledge;
         var plusR = Math.pow(1 + (rate / 100), 0-month);
         
-        this.monthlyPayment = this.util.monthlyPayment(rate, month, initCap) ;//(rate /100 )/ (1 - plusR) * initCap;
+        this.monthlyPayment = this.util.monthlyPayment(m.interestRate, m.duration, m.pledge) ;//(rate /100 )/ (1 - plusR) * initCap;
         
         let rateTable = this.util.fillInterestTable(initCap, rate/100, this.monthlyPayment, month);
-        
+       
         for (var i = 0; i < m.duration; i++) {
-            this.barChartData[0].data.push(this.monthlyPayment * i * 12);
-            this.barChartLabels.push('year ' + i + 1);
+            var yearInterest =0;
+            for (var j=i * 12; j < 12 * (i + 1); j++) {
+                yearInterest += rateTable.i[j];
+            }
+            if (i == 0) {
+                this.barChartData[0].data.push(yearInterest * 100000/m.pledge);
+            }
+            else {
+                this.barChartData[0].data.push(yearInterest * 100000/m.pledge + this.barChartData[0].data[i-1]);
+            }
+            this.barChartLabels.push('year ' + (i + 1));
         }
     }
 

@@ -7,12 +7,19 @@ a.pt-wrapper {
     border: 1px solid #d3d3d3;
     padding:0;
     margin: 0px 0 20px 0;
-    height: 280px;
+    height: 240px;
+    overflow: hidden;
 }
 
 .pt-item-image {
     float: left;
     width: 50%;
+    overflow: hidden;
+}
+
+.pt-item-image > img {
+    width: 100%;
+    max-height: 240px;
 }
 
 .pt-item-description {
@@ -56,3 +63,4 @@ ul {
     margin: 10px 0;
     font-size: 1em;
 }
+

@@ -22,10 +22,10 @@ var mortgages = [{
             "property" : {
                 "name" : "Ka On Building",
                 "images" : [
-                    "img/kaon1.jpg",
-                    "img/kaon2.jpg",
-                    "img/kaon3.jpg",
-                    "img/kaon4.jpg"
+                    "/hackathon/img/kaon1.jpg",
+                    "/hackathon/img/kaon2.jpg",
+                    "/hackathon/img/kaon3.jpg",
+                    "/hackathon/img/kaon4.jpg"
                 ], 
                 "type" : "Office Building",
                 "geoLocation" : {
@@ -49,7 +49,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/eric.png",
+                    "profileImageURL" : "/hackathon/img/eric.png",
                     "email" : "eric@gmail.com"
                 }
             }
@@ -76,8 +76,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Cheung Kong Building",
                 "images" : [
-                    "img/ck1.jpg",
-                    "img/ck2.jpg"
+                    "/hackathon/img/ck1.jpg",
+                    "/hackathon/img/ck2.jpg"
                 ], 
                 "type" : "Shopping Mall",
                 "geoLocation" : {
@@ -101,7 +101,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/kashing.png",
+                    "profileImageURL" : "/hackathon/img/kashing.png",
                     "email" : "kashing@gmail.com"
                 }
             }
@@ -128,8 +128,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Hotel Koko",
                 "images" : [
-                    "img/koko1.jpg",
-                    "img/koko2.jpg"
+                    "/hackathon/img/koko1.jpg",
+                    "/hackathon/img/koko2.jpg"
                 ], 
                 "type" : "Hotel",
                 "geoLocation" : {
@@ -153,7 +153,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/drump.png",
+                    "profileImageURL" : "/hackathon/img/drump.png",
                     "email" : "drump@gmail.com"
                 }
             }
@@ -180,8 +180,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Meng's house",
                 "images" : [
-                    "img/meng1.jpg",
-                    "img/meng2.jpg"
+                    "/hackathon/img/meng1.jpg",
+                    "/hackathon/img/meng2.jpg"
                 ], 
                 "type" : "Residential House",
                 "geoLocation" : {
@@ -205,7 +205,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/john.png",
+                    "profileImageURL" : "/hackathon/img/john.png",
                     "email" : "john@gmail.com"
                 }
             }
@@ -232,9 +232,9 @@ var mortgages = [{
             "property" : {
                 "name" : "ICC",
                 "images" : [
-                    "img/icc1.jpg",
-                    "img/icc2.jpg",
-                    "img/icc3.jpg"
+                    "/hackathon/img/icc1.jpg",
+                    "/hackathon/img/icc2.jpg",
+                    "/hackathon/img/icc3.jpg"
                 ], 
                 "type" : "Office Building",
                 "geoLocation" : {
@@ -258,7 +258,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/jordan.png",
+                    "profileImageURL" : "/hackathon/img/jordan.png",
                     "email" : "jordan@gmail.com"
                 }
             }
@@ -285,8 +285,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Festival Walk",
                 "images" : [
-                    "img/fes1.jpg",
-                    "img/fes2.jpg"
+                    "/hackathon/img/fes1.jpg",
+                    "/hackathon/img/fes2.jpg"
                 ], 
                 "type" : "Shopping Mall",
                 "geoLocation" : {
@@ -310,7 +310,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/tim.png",
+                    "profileImageURL" : "/hackathon/img/tim.png",
                     "email" : "tim@gmail.com"
                 }
             }
@@ -337,8 +337,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Mid Level Garden",
                 "images" : [
-                    "img/mid1.jpg",
-                    "img/mid2.jpg"
+                    "/hackathon/img/mid1.jpg",
+                    "/hackathon/img/mid2.jpg"
                 ], 
                 "type" : "Residential House",
                 "geoLocation" : {
@@ -362,7 +362,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/maxim.png",
+                    "profileImageURL" : "/hackathon/img/maxim.png",
                     "email" : "maxim@gmail.com"
                 }
             }
@@ -389,8 +389,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Ang Mo Building",
                 "images" : [
-                    "img/angmo1.jpg",
-                    "img/angmo2.jpg"
+                    "/hackathon/img/angmo1.jpg",
+                    "/hackathon/img/angmo2.jpg"
                 ], 
                 "type" : "Office Building",
                 "geoLocation" : {
@@ -414,7 +414,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/sunny.png",
+                    "profileImageURL" : "/hackathon/img/sunny.png",
                     "email" : "sunny@gmail.com"
                 }
             }
@@ -441,8 +441,8 @@ var mortgages = [{
             "property" : {
                 "name" : "Cheung Heng Building",
                 "images" : [
-                    "img/CheungHeng1.jpg",
-                    "img/CheungHeng2.jpg"
+                    "/hackathon/img/CheungHeng1.jpg",
+                    "/hackathon/img/CheungHeng2.jpg"
                 ], 
                 "type" : "Shopping Mall",
                 "geoLocation" : {
@@ -466,7 +466,7 @@ var mortgages = [{
                              "state": "NY",
                              "postalCode": "10021"
                          },
-                    "profileImageURL" : "img/pui.png",
+                    "profileImageURL" : "/hackathon/img/pui.png",
                     "email" : "pui@gmail.com"
                 }
             }

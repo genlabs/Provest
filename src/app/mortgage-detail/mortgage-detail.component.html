@@ -3,7 +3,7 @@
         <div class="carosel">
             <ngb-carousel>
               <template ngbSlide *ngFor="let image of _mortgage.property.images">
-                <img src="image" alt="{{ _mortgage.property.name }}">
+                <img [src]="image" alt="{{ _mortgage.property.name }}">
                 <div class="carousel-caption">
                   <h3>{{ _mortgage.property.name }}</h3>
                   <p> {{ _mortgage.property.address.streetAdress }} </p>
@@ -41,11 +41,18 @@
             <div><strong>Yield:</strong> {{ _mortgage.interestRate}}%  </div>
             <div> <strong>Investment Term:</strong> {{ _mortgage.duration }} years </div>
         </div>
+        <div class="landlord">
+            <h3> Property Owner Credit Score</h3>
+            <div> <strong> Score: </strong> <span class="score">80</span>         <span class="bg-success tag"> Good </span> </div>
+
+        </div>
     </div>
     <div class="chart">
         <h3>Expected Return </h3>
         <bar-chart [mortgage]="_mortgage"></bar-chart>
     </div> 
-    
+    <div class="invest">
+        <button class="btn btn-success">Invest on this property</button>
+    </div>
 
 </div>
