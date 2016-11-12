@@ -52,8 +52,8 @@
             "property" : {
                 "name" : "Mid Level Garden",
                 "images" : [
-                    "hackathon/img/mid1.jpg",
-                    "img/mid2.jpg"
+                    "/hackathon/img/mid1.jpg",
+                    "/hackathon/img/mid2.jpg"
                 ], 
                 "type" : "Residential House",
                 "geoLocation" : {
@@ -92,8 +92,8 @@
             "property" : {
                 "name" : "Ang Mo Building",
                 "images" : [
-                    "img/angmo1.jpg",
-                    "img/angmo2.jpg"
+                    "./hackathon/img/angmo1.jpg",
+                    "./hackathon/img/angmo2.jpg"
                 ], 
                 "type" : "Office Building",
                 "geoLocation" : {
@@ -132,8 +132,8 @@
             "property" : {
                 "name" : "Cheung Heng Building",
                 "images" : [
-                    "img/CheungHeng1.jpg",
-                    "img/CheungHeng2.jpg"
+                    "./hackathon/img/CheungHeng1.jpg",
+                    "./hackathon/img/CheungHeng2.jpg"
                 ], 
                 "type" : "Shopping Mall",
                 "geoLocation" : {

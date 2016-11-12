@@ -17,7 +17,7 @@ export class CurrentUserService {
 	    "updated_time": "2016-08-02T21:27:44+0000",
 	    "email" : "eatCurry@gmail.com",
 	    "password" : "curry",
-	    "profileImageURL" : "img/curry.png",
+	    "profileImageURL" : "hackathon/img/curry.png",
 	    "address":
 	     {
 	         "streetAddress": "21 2nd Street",
@@ -62,7 +62,7 @@ export class CurrentUserService {
 	                "name" : "Mid Level Garden",
 	                "images" : [
 	                    "hackathon/img/mid1.jpg",
-	                    "img/mid2.jpg"
+	                    "hackathon/img/mid2.jpg"
 	                ], 
 	                "type" : "Residential House",
 	                "geoLocation" : {
@@ -102,8 +102,8 @@ export class CurrentUserService {
 	            "property" : {
 	                "name" : "Ang Mo Building",
 	                "images" : [
-	                    "img/angmo1.jpg",
-	                    "img/angmo2.jpg"
+	                    "hackathon/img/angmo1.jpg",
+	                    "hackathon/img/angmo2.jpg"
 	                ], 
 	                "type" : "Office Building",
 	                "geoLocation" : {
@@ -143,8 +143,8 @@ export class CurrentUserService {
 	            "property" : {
 	                "name" : "Cheung Heng Build.",
 	                "images" : [
-	                    "img/CheungHeng1.jpg",
-	                    "img/CheungHeng2.jpg"
+	                    "hackathon/img/CheungHeng1.jpg",
+	                    "hackathon/img/CheungHeng2.jpg"
 	                ], 
 	                "type" : "Shopping Mall",
 	                "geoLocation" : {

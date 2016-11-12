@@ -21,7 +21,7 @@
 
 <ul class="myInvestedMortgages">  
   <li class="myMortgage" *ngFor="let portfolio of _myPortfolio">
-  	<img class="propertyImg" src="hackathon/img/mid1.jpg">
+  	<img class="propertyImg" [src]="portfolio.property.images[0]">
 
   	<h4 class="propertyName"> {{ portfolio.property.name}} </h4>
 
