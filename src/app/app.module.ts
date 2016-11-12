@@ -24,6 +24,8 @@ import { ListingPipe } from './listing.pipe';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { ChartsModule} from 'ng2-charts/ng2-charts';
 import { PendingItemComponent } from './pending-item/pending-item.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { UtilService }  from './util.service';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { PendingItemComponent } from './pending-item/pending-item.component';
     MyPortfolioItemComponent,
     ListingPipe,
     PieChartComponent,
-    PendingItemComponent
+    PendingItemComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { PendingItemComponent } from './pending-item/pending-item.component';
     MortgagesService,
     CurrentUserService,
     NgbProgressbarConfig,
-    PendingMortgagesService
+    PendingMortgagesService,
+    UtilService
   ],
   bootstrap: [AppComponent]
 })

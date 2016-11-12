@@ -14,6 +14,8 @@ export class PlatformComponent implements OnInit {
 
   	this.pendingMortgagesService.postMortgage(1);
 
+  	console.log(this.pendingMortgagesService.getPendingMortgages());
+
   }
 
 }

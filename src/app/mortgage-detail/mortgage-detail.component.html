@@ -22,7 +22,7 @@
                 <span>pledge of ${{ _mortgage.pledge}} </span>
             </div>
             <div class="daystogo">
-                <h2>29</h2>
+                <h2>{{ _dayleft | number:'1.0-0'}}</h2>
                 <span>days to go </span>
             </div>
         </div>
@@ -42,6 +42,10 @@
             <div> <strong>Investment Term:</strong> {{ _mortgage.duration }} years </div>
         </div>
     </div>
-
+    <div class="chart">
+        <h3>Expected Return </h3>
+        <bar-chart [mortgage]="_mortgage"></bar-chart>
+    </div> 
+    
 
 </div>

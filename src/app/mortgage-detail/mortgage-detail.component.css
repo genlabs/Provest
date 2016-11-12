@@ -12,6 +12,7 @@
 .investor, .amount, .daystogo {
     display: inline-block;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 h2 {
@@ -25,11 +26,12 @@ h2 {
     color: #303030;
 }
 
-.mortgage-profolio {
+.mortgage-profolio, .chart {
     padding: 20px 10px;
   
 }
 
 .yield {
-   margin: 10px;
+   margin-top: 10px;
 }
+
