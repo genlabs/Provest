@@ -22,6 +22,7 @@ import { CurrentUserService } from './current-user.service';
 import { ListingPipe } from './listing.pipe';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { ChartsModule} from 'ng2-charts/ng2-charts';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ChartsModule} from 'ng2-charts/ng2-charts';
     GoogleMapComponent,
     MyPortfolioItemComponent,
     ListingPipe,
-    PieChartComponent
+    PieChartComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,

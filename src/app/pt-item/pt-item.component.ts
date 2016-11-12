@@ -8,6 +8,7 @@ import { Mortgage } from '../mortgage';
 export class PtItemComponent implements OnInit {
 
   private _mortgage:Mortgage = null;
+  private _dayleft = 0;
 
   constructor() { }
 
@@ -17,6 +18,9 @@ export class PtItemComponent implements OnInit {
   @Input()
   set mortgage(p:Mortgage) {
       this._mortgage = p;
+      let start = new Date().getTime();
+      let end = new Date(this._mortgage.listingDate.endDate).getTime();
+      this._dayleft = (end - start)/(24*60*60*1000);
   }
 
   get mortgage() {
