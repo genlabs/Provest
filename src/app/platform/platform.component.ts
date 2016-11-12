@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PendingMortgagesService} from '../pending-mortgages.service';
 
 @Component({
   selector: 'app-platform',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatformComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pendingMortgagesService:PendingMortgagesService) { }
 
   ngOnInit() {
+
+  	this.pendingMortgagesService.postMortgage(1);
+
   }
 
 }

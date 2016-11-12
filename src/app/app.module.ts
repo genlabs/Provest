@@ -16,12 +16,14 @@ import {NgbModule, NgbCarouselConfig, NgbProgressbarConfig} from '@ng-bootstrap/
 import { PtListComponent } from './pt-list/pt-list.component';
 import { PtItemComponent } from './pt-item/pt-item.component';
 import { MortgagesService } from './mortgages.service';
+import { PendingMortgagesService } from './pending-mortgages.service';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { MyPortfolioItemComponent } from './my-portfolio-item/my-portfolio-item.component';
 import { CurrentUserService } from './current-user.service';
 import { ListingPipe } from './listing.pipe';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { ChartsModule} from 'ng2-charts/ng2-charts';
+import { PendingItemComponent } from './pending-item/pending-item.component';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { ChartsModule} from 'ng2-charts/ng2-charts';
     GoogleMapComponent,
     MyPortfolioItemComponent,
     ListingPipe,
-    PieChartComponent
+    PieChartComponent,
+    PendingItemComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { ChartsModule} from 'ng2-charts/ng2-charts';
     NgbCarouselConfig,
     MortgagesService,
     CurrentUserService,
-    NgbProgressbarConfig
+    NgbProgressbarConfig,
+    PendingMortgagesService
   ],
   bootstrap: [AppComponent]
 })

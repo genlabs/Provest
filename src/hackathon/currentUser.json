@@ -47,21 +47,120 @@
             "investedAmount" : 150000,
             "percentageOwned" : 7, 
             "monthlyPayment" : 157,
-            "performance" : "img/performance1.jpg"
+            "interestRate" : 4,
+            "performance" : "img/performance1.jpg",
+            "property" : {
+                "name" : "Mid Level Garden",
+                "images" : [
+                    "hackathon/img/mid1.jpg",
+                    "img/mid2.jpg"
+                ], 
+                "type" : "Residential House",
+                "geoLocation" : {
+                    "latitude": 22.28,
+                    "longitude": 114.15
+                },
+                "address" : {
+                    "streetAddress": "33A Mid Levels, Central",
+                    "city": "Hong Kong",
+                    "country": "Hong Kong",
+                    "postalCode": ""
+                }, 
+                "estimatedValue" : 5000000,
+                "landlord" : {
+                    "name" : "Maxim",
+                    "financialDocument" : "files/fdfda.pdf",
+                    "address":
+                         {
+                             "streetAddress": "21 2nd Street",
+                             "city": "New York",
+                             "state": "NY",
+                             "postalCode": "10021"
+                         },
+                    "profileImageURL" : "img/maxim.png",
+                    "email" : "maxim@gmail.com"
+                }
+            }
         },
         {
             "mId" : 8,
             "investedAmount" : 12500,
             "percentageOwned" : 0.5, 
             "monthlyPayment" : 63,
-            "performance" : "img/performance2.jpg"          
+            "interestRate" : 5,
+            "performance" : "img/performance2.jpg",
+            "property" : {
+                "name" : "Ang Mo Building",
+                "images" : [
+                    "img/angmo1.jpg",
+                    "img/angmo2.jpg"
+                ], 
+                "type" : "Office Building",
+                "geoLocation" : {
+                    "latitude": 22.28,
+                    "longitude": 114.15
+                },
+                "address" : {
+                    "streetAddress": "09 Ang Mo Kio, Bugis",
+                    "city": "Singapore",
+                    "country": "Singapore",
+                    "postalCode": ""
+                }, 
+                "estimatedValue" : 5000000,
+                "landlord" : {
+                    "name" : "Sunny Lo",
+                    "financialDocument" : "files/fdfda.pdf",
+                    "address":
+                         {
+                             "streetAddress": "21 2nd Street",
+                             "city": "New York",
+                             "state": "NY",
+                             "postalCode": "10021"
+                         },
+                    "profileImageURL" : "img/sunny.png",
+                    "email" : "sunny@gmail.com"
+                }
+            }           
         },
         {
             "mId" : 9,
             "investedAmount" : 24000,
             "percentageOwned" : 0.8, 
             "monthlyPayment" : 34,
-            "performance" : "img/performance3.jpg"  
+            "interestRate" : 6,
+            "performance" : "img/performance3.jpg",
+            "property" : {
+                "name" : "Cheung Heng Building",
+                "images" : [
+                    "img/CheungHeng1.jpg",
+                    "img/CheungHeng2.jpg"
+                ], 
+                "type" : "Shopping Mall",
+                "geoLocation" : {
+                    "latitude": 22.28,
+                    "longitude": 114.15
+                },
+                "address" : {
+                    "streetAddress": "4 Beijing Street, Tsim Sha Tsui",
+                    "city": "Hong Kong",
+                    "country": "Hong Kong",
+                    "postalCode": ""
+                }, 
+                "estimatedValue" : 5000000,
+                "landlord" : {
+                    "name" : "Puiman",
+                    "financialDocument" : "files/fdfda.pdf",
+                    "address":
+                         {
+                             "streetAddress": "21 2nd Street",
+                             "city": "New York",
+                             "state": "NY",
+                             "postalCode": "10021"
+                         },
+                    "profileImageURL" : "img/pui.png",
+                    "email" : "pui@gmail.com"
+                }
+            }
         }
     ]
 }
