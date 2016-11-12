@@ -16,6 +16,9 @@ import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 import { PtListComponent } from './pt-list/pt-list.component';
 import { PtItemComponent } from './pt-item/pt-item.component';
 import { MortgagesService } from './mortgages.service';
+import { GoogleMapComponent } from './google-map/google-map.component';
+import { MyPortfolioItemComponent } from './my-portfolio-item/my-portfolio-item.component';
+import { CurrentUserService } from './current-user.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,8 @@ import { MortgagesService } from './mortgages.service';
     ContactUsComponent,
     PtListComponent,
     PtItemComponent,
+    GoogleMapComponent,
+    MyPortfolioItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { MortgagesService } from './mortgages.service';
   providers: [
     appRoutingProviders,
     NgbCarouselConfig,
-    MortgagesService
+    MortgagesService,
+    CurrentUserService
   ],
   bootstrap: [AppComponent]
 })
