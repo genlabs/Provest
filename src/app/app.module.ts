@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
-
+import { routing, appRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
 import { DescriptionComponent } from './description/description.component';
 import { MortgageDetailComponent } from './mortgage-detail/mortgage-detail.component';
@@ -20,27 +20,17 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     MyPortfolioComponent,
     PlatformComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path: 'mortgage/:mId', component: MortgageDetailComponent },
-      { path: 'myPortfolio', component: MyPortfolioComponent },
-      { path: 'contactUs', component: ContactUsComponent },
-      {
-        path: 'platform',
-        component: PlatformComponent,
-        data: {
-          title: 'Mortgages List'
-        }
-      },
-      { path: '', component: HomeComponent }
-    ])
+    routing
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
