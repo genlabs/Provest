@@ -11,11 +11,11 @@
 	<div class="progressBar">
 
 		<p class="investedAmount"> <strong> My Invested Amount: </strong> ${{ portfolio.investedAmount}}</p>
-		<p class="percentageOwned"> <strong> My percentage owned: </strong>${{portfolio.percentageOwned}} </p>
-		<ngb-progressbar [max]="portfolio.pledge" [value]="portfolio.accumulatedFund.amount"><span style="color:white; white-space:nowrap;">{{portfolio.accumulatedFund.amount}} / {{portfolio.pledge}}</span>
-		</ngb-progressbar>
+		<p class="percentageOwned"> <strong> My percentage owned: </strong>{{portfolio.percentageOwned}}% </p>
 		<p class="pledge"> <strong> Pledge: </strong> ${{ portfolio.pledge}} </p>
 		<p class="accumulatedAmount"> <strong> Accumulated Amount: </strong> ${{ portfolio.accumulatedFund.amount}} </p>
+		<ngb-progressbar [max]="portfolio.pledge" [value]="portfolio.accumulatedFund.amount"><span style="color:white; white-space:nowrap;">{{portfolio.accumulatedFund.amount}} / {{portfolio.pledge}}</span>
+		</ngb-progressbar>
 		<p class="accumulatedPeople"> <strong> No. of Investors: </strong> ${{ portfolio.accumulatedFund.numOfParticipants}} </p>
 
 	</div>

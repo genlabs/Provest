@@ -59,7 +59,7 @@ export class MortgageDetailComponent implements OnInit {
         }
         else 
         {
-            this.pendingService.postMortgage(id, this.pledgeAmount);
+            this.pendService.postMortgage(id, this.pledgeAmount);
             this.router.navigate(['/myPortfolio']);
         }
     }

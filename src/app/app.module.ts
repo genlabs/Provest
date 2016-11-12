@@ -26,6 +26,7 @@ import { ChartsModule} from 'ng2-charts/ng2-charts';
 import { PendingItemComponent } from './pending-item/pending-item.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { UtilService }  from './util.service';
+import { CurrentUserComponent } from './current-user/current-user.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { UtilService }  from './util.service';
     ListingPipe,
     PieChartComponent,
     PendingItemComponent,
-    BarChartComponent
+    BarChartComponent,
+    CurrentUserComponent
   ],
   imports: [
     BrowserModule,
