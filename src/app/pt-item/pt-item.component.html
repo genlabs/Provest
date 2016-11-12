@@ -6,14 +6,28 @@
     <div class="pt-item-description">
         <h3 class="pt-item-title"> {{ _mortgage.property.name }} </h3>
         <div class="pt-item-des">
-            <span>Country: {{ _mortgage.property.address.country}}</span>
-            <span>Interest Rate Earn (apr.): {{_mortgage.interestRate}} %</span>
+            <span><strong>Country:</strong> {{ _mortgage.property.address.country}}</span><br />
+           
+            <span><strong>Type:</strong> {{ _mortgage.property.type}}</span><br />
+            <span><strong>Effective Interest Rate:</strong> {{_mortgage.interestRate}}%</span><br />
+            <span><strong>Estimated Value:</strong> $ {{ _mortgage.property.estimatedValue }}</span> <br />
+            <span><strong>Term:</strong> {{ _mortgage.duration }} years </span>
         </div>
-        <span>Pledged Amount: {{_mortgage.accumulatedFund.amount}}</span>
-        <span>Backer: {{ _mortgage.accumulatedFund.numOfParticipants}}</span>
-        <span>{{_mortgage.pledge}}</span>
-        
-      
+       <ngb-progressbar type="success" value="{{_mortgage.accumulatedFund.amount/_mortgage.pledge * 100 }}"></ngb-progressbar>
+        <ul>
+            <li class="inlinebox">
+                <strong>{{_mortgage.accumulatedFund.amount/_mortgage.pledge * 100 | number:'1.0-0'}}%</strong>
+                <span>funded</span>
+            </li>
+            <li class="inlinebox">
+                 <strong>{{ _mortgage.accumulatedFund.numOfParticipants}}</strong>
+                 <span>investors</span>
+            </li>
+            <li class="inlinebox">
+                <strong>{{_mortgage.pledge}}</strong>
+                <span>days to go</span>
+            </li>
+        </ul>
     </div>
 </a>
 

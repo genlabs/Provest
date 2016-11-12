@@ -106,3 +106,8 @@ body {
     display: block;
     padding: 10px 15px;
 }
+
+
+.progress-success {
+    height: 5px;
+}

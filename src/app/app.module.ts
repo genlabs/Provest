@@ -11,7 +11,7 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { PlatformComponent } from './platform/platform.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule, NgbCarouselConfig, NgbProgressbarConfig} from '@ng-bootstrap/ng-bootstrap';
 
 import { PtListComponent } from './pt-list/pt-list.component';
 import { PtItemComponent } from './pt-item/pt-item.component';
@@ -19,6 +19,7 @@ import { MortgagesService } from './mortgages.service';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { MyPortfolioItemComponent } from './my-portfolio-item/my-portfolio-item.component';
 import { CurrentUserService } from './current-user.service';
+import { ListingPipe } from './listing.pipe';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CurrentUserService } from './current-user.service';
     PtItemComponent,
     GoogleMapComponent,
     MyPortfolioItemComponent,
+    ListingPipe,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { CurrentUserService } from './current-user.service';
     appRoutingProviders,
     NgbCarouselConfig,
     MortgagesService,
-    CurrentUserService
+    CurrentUserService,
+    NgbProgressbarConfig
   ],
   bootstrap: [AppComponent]
 })

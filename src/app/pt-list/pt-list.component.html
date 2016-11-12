@@ -1,5 +1,5 @@
 <ul>
-    <li *ngFor="let mortgage of mortgages" class="pt-item">
+    <li *ngFor="let mortgage of mortgages | listing" class="pt-item">
         <pt-item [mortgage]=mortgage></pt-item>
    </li>
 </ul>

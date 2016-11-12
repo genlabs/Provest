@@ -16,6 +16,7 @@ export class PtItemComponent implements OnInit {
 
   @Input()
   set mortgage(p:Mortgage) {
+    console.log(p.property);
       this._mortgage = p;
   }
 
