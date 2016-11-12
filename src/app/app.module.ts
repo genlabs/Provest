@@ -10,6 +10,7 @@ import { MortgageDetailComponent } from './mortgage-detail/mortgage-detail.compo
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { PlatformComponent } from './platform/platform.component';
 import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     MortgageDetailComponent,
     MyPortfolioComponent,
     PlatformComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       { path: 'mortgage/:mId', component: MortgageDetailComponent },
       { path: 'myPortfolio', component: MyPortfolioComponent },
+      { path: 'contactUs', component: ContactUsComponent },
       {
         path: 'platform',
         component: PlatformComponent,
