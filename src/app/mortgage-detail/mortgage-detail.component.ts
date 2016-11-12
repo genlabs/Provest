@@ -52,10 +52,6 @@ export class MortgageDetailComponent implements OnInit {
     }
 
     commit(id:number) {
-<<<<<<< HEAD
-        console.log(id);
-        this.pendService.postMortgage(id, 100000);
-=======
         
         if (this.pledgeAmount < 50000) {
             window.alert('Minimum investment requirment: $50000');
@@ -66,8 +62,6 @@ export class MortgageDetailComponent implements OnInit {
             this.pendingService.postMortgage(id, this.pledgeAmount);
             this.router.navigate(['/myPortfolio']);
         }
-
->>>>>>> 7731a21eb5064d25e840033e776899140558ef7f
     }
 
 }
