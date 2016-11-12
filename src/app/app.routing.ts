@@ -19,8 +19,8 @@ const appRoutes:Routes = [
         title: 'Mortgages List'
     }
     },
-    { path: '', component: HomeComponent },
-    { path: 'home', redirectTo:"home" }
+    { path: 'home', component: HomeComponent },
+    { path: '', redirectTo:"/home", pathMatch: 'full' }
 ];
 
 export const appRoutingProviders:any[] = [
