@@ -12,6 +12,8 @@ import { PlatformComponent } from './platform/platform.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { PtListComponent } from './pt-list/pt-list.component';
+import { PtItemComponent } from './pt-item/pt-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     PlatformComponent,
     HomeComponent,
     ContactUsComponent,
+    PtListComponent,
+    PtItemComponent,
   ],
   imports: [
     BrowserModule,
