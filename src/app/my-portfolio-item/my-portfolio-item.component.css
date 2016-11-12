@@ -38,13 +38,13 @@
 }
 
 .investedAmount{
-	position: absolute;
+/*	position: absolute;
 	top: 70%;
 	left: 50%;	
-	font-size: 0.9em;
+	font-size: 0.9em;*/
 }
 
-.percentageOwned{
+/*.percentageOwned{
 	position: absolute;
 	top: 77%;
 	left: 50%;	
@@ -64,7 +64,7 @@
 	left: 50%;	
 	font-size: 0.9em;	
 }
-
+*/
 .highlighted{
 	font-weight: bold;
 }
@@ -79,4 +79,25 @@
 	left: 30%;
 	top:50%;
 	font-size: 0.63em;
+}
+
+.progressBar{
+	position: absolute;
+	top: 5%;
+	left: 45%;
+	width: 50%;
+	height: 60%;
+}
+
+.progressBar2{
+	position: absolute;
+	top: 25%;
+	left: 45%;
+	width: 50%;
+	height: 60%;
+}
+
+.progressTitle{
+	font-size: 0.9em;
+	font-style: italic;
 }

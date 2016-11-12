@@ -25,12 +25,21 @@
 
   	<h4 class="propertyName"> {{ portfolio.property.name}} </h4>
 
-    <p class="investedAmount"> <strong> Amount you have invested: </strong> 
+
+	<div class="progressBar">
+		<h5 class="progressTitle"> Collected Amount Vs Total Investment Amount </h5>
+		<ngb-progressbar [max]="portfolio.investedAmount" [value]="totalCollectedAmount"><span style="color:white; white-space:nowrap;">{{totalCollectedAmount}} / {{portfolio.investedAmount}}</span>
+		</ngb-progressbar>
+		<p class="totalCollectedAmount"> <strong> Amount you have received: </strong> 
+    ${{ totalCollectedAmount}} </p>
+		<p class="investedAmount"> <strong> Amount you have invested: </strong> 
     ${{ portfolio.investedAmount}} </p>
-    <p class="percentageOwned"> <strong> Percentage you are owning: </strong> {{ portfolio.percentageOwned}}% </p>
+
+        <p class="percentageOwned"> <strong> Percentage you are owning: </strong> {{ portfolio.percentageOwned}}% </p>
 	<p class="monthlyPayment"> <strong> Monthly received payment: </strong>${{portfolio.monthlyPayment}} </p>
 	<p class="interestRate"> <strong>Monthly Interest Rate: </strong>{{portfolio.interestRate}}% </p>
-	<!-- <img class="performance" src="portfolio.performance"> -->
-	<img class="performance" src="hackathon/img/performance1.jpg">
+	</div>
+
+
   </li>
 <ul>  

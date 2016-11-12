@@ -47,6 +47,8 @@
             "investedAmount" : 150000,
             "percentageOwned" : 7, 
             "monthlyPayment" : 157,
+            "owningPeriod": 4,
+            "interest" : 62,
             "interestRate" : 4,
             "performance" : "img/performance1.jpg",
             "property" : {
@@ -87,6 +89,8 @@
             "investedAmount" : 12500,
             "percentageOwned" : 0.5, 
             "monthlyPayment" : 63,
+            "owningPeriod": 24,
+            "interest" : 152,
             "interestRate" : 5,
             "performance" : "img/performance2.jpg",
             "property" : {
@@ -127,6 +131,8 @@
             "investedAmount" : 24000,
             "percentageOwned" : 0.8, 
             "monthlyPayment" : 34,
+            "owningPeriod": 48,
+            "interest" : 512,            
             "interestRate" : 6,
             "performance" : "img/performance3.jpg",
             "property" : {

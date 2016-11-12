@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { PendingMortgagesService} from '../pending-mortgages.service';
+import { PendingMortgages} from '../pending-mortgages';
+import { Subscription} from 'rxjs/Subscription';
+
 
 @Component({
   selector: 'pending-item',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PendingItemComponent implements OnInit {
 
-  constructor() { }
+	private _pendingPortfolio= [];
+	//private hasNewPost:boolean;
+	subscription:Subscription;
+
+  constructor(private pendingService:PendingMortgagesService) { }
 
   ngOnInit() {
+
+  	   console.log(this.pendingService.getPendingMortgages());
+  	  this.pendingService.postMortgage(1,1000);
+  	   console.log(this.pendingService.getPendingMortgages());
+  	// this.subscription = this.pendingService.postAnnounce.subscribe(
+  	// 	id => {
+
+  	// 	})
   }
+
+
 
 }

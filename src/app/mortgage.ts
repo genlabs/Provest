@@ -4,7 +4,9 @@ export class Mortgage {
     status:string;
     created_time: string;
     updated_time: string;
-   
+    investedAmount: number;
+    percentageOwned: number;
+    monthlyPayment: number;
     appraisalValue: number;
     interestRate : number;
     duration :number;
