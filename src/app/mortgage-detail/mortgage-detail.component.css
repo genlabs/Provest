@@ -31,7 +31,22 @@ h2 {
   
 }
 
-.yield {
+.yield, .landlord {
    margin-top: 10px;
 }
 
+.invest {
+    margin: 10px 0 40px 0;
+    text-align: center;
+}
+
+.score {
+    font-size: 2.4em;
+    font-weight: bolder;
+}
+
+.tag {
+    font-size: 0.8em;
+    width: auto;
+
+}
