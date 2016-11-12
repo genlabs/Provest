@@ -55,9 +55,8 @@
         <button class="btn btn-success" (click)="invest()">Invest on this property</button>
     </div>
     <div class="invest-amount" [ngClass]='{"block": _invest, "hide":!_invest }'>
-
-        <button class="btn btn-success">Invest</button>
-        <button class="btn btn-danger">Cancel</button>
+         <button class="btn btn-success" (click)="commit(_mortgage.mId)">Invest</button>
+        <button class="btn btn-danger" (click)="cancel()">Cancel</button>
     </div>
 
 </div>

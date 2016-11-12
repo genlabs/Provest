@@ -12,6 +12,7 @@ import { MortgagesService } from '../mortgages.service';
 export class MortgageDetailComponent implements OnInit {
 
     id: number;
+    private _test:number = 4;
     private sub: any;
     private _mortgage:Mortgage;
     private _dayleft:number;
@@ -42,5 +43,12 @@ export class MortgageDetailComponent implements OnInit {
         this._invest = true;
     }
 
+    cancel() {
+        this._invest = false;
+    }
+
+    commit(id:number) {
+        console.log(id);
+    }
 
 }

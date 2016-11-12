@@ -68,7 +68,7 @@ h2 {
 
 .invest-amount {
     border: 1px solid #ddd;
-    background-color: #ccc;
+    background-color: #fff;
 
     width: 100%;
     border-radius: 5px;
@@ -77,5 +77,5 @@ h2 {
 }
 
 .mortgage-detail {
-      margin-bottom: 200px;
+      margin-bottom: 100px;
 }
