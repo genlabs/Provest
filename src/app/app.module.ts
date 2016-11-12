@@ -26,6 +26,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+
     routing
   ],
   providers: [
