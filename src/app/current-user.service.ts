@@ -54,6 +54,7 @@ export class CurrentUserService {
 	            "mId" : 7,
 	            "investedAmount" : 150000,
 	            "percentageOwned" : 7, 
+	            "owningPeriod" : 5,
 	            "monthlyPayment" : 157,
 	            "interestRate" : 4,
 	            "performance" : "img/performance1.jpg",
@@ -94,6 +95,7 @@ export class CurrentUserService {
 	            "mId" : 8,
 	            "investedAmount" : 12500,
 	            "percentageOwned" : 0.5, 
+	            "owningPeriod" : 24,
 	            "monthlyPayment" : 63,
 	            "interestRate" : 5,
 	            "performance" : "img/performance2.jpg",
@@ -134,11 +136,12 @@ export class CurrentUserService {
 	            "mId" : 9,
 	            "investedAmount" : 24000,
 	            "percentageOwned" : 0.8, 
+	            "owningPeriod" : 12,
 	            "monthlyPayment" : 34,
 	            "interestRate" : 6,
 	            "performance" : "img/performance3.jpg",
 	            "property" : {
-	                "name" : "Cheung Heng Building",
+	                "name" : "Cheung Heng Build.",
 	                "images" : [
 	                    "img/CheungHeng1.jpg",
 	                    "img/CheungHeng2.jpg"

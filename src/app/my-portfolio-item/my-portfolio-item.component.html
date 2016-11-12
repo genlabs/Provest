@@ -1,4 +1,8 @@
 
+<div style="display: block">
+  <canvas baseChart
+</div>
+
 
 <ul class="myInvestedMortgages">  
   <li class="myMortgage" *ngFor="let portfolio of _myPortfolio">
@@ -6,10 +10,11 @@
   	<!-- <img class="propertyImg" src="portfolio.property.images[0]"> -->
   	<h4 class="propertyName"> {{ portfolio.property.name}} </h4>
 <!--   	<h4 class="landlord"> {{portfolio.property.landlord.name}} </h4> -->
-    <h5 class="investedAmount"> Amount you have invested: {{ portfolio.investedAmount}} </h5>
-    <p class="percentageOwned"> Percentage you are owning: {{ portfolio.percentageOwned}} </p>
-	<p class="monthlyPayment"> Monthly received payment: {{portfolio.monthlyPayment}} </p>
-	<p class="interestRate"> Monthly Interest Rate: {{portfolio.interestRate}} </p>
+    <p class="investedAmount"> <strong> Amount you have invested: </strong> 
+    ${{ portfolio.investedAmount}} </p>
+    <p class="percentageOwned"> <strong> Percentage you are owning: </strong> {{ portfolio.percentageOwned}}% </p>
+	<p class="monthlyPayment"> <strong> Monthly received payment: </strong>${{portfolio.monthlyPayment}} </p>
+	<p class="interestRate"> <strong>Monthly Interest Rate: </strong>{{portfolio.interestRate}}% </p>
 	<!-- <img class="performance" src="portfolio.performance"> -->
 	<img class="performance" src="hackathon/img/performance1.jpg">
   </li>
