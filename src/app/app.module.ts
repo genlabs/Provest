@@ -11,6 +11,7 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { PlatformComponent } from './platform/platform.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-
+    NgbModule,
     routing
   ],
   providers: [
