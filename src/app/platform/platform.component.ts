@@ -12,9 +12,9 @@ export class PlatformComponent implements OnInit {
 
   ngOnInit() {
 
-  	this.pendingMortgagesService.postMortgage(1);
+  	// this.pendingMortgagesService.postMortgage(1);
 
-  	console.log(this.pendingMortgagesService.getPendingMortgages());
+  	// console.log(this.pendingMortgagesService.getPendingMortgages());
 
   }
 

@@ -5,7 +5,7 @@ export class PendingMortgages {
     created_time: string;
     updated_time: string;
     investedAmount: number;
-    status: string;
+    
     percentageOwned: number;
     monthlyPayment: number;
     appraisalValue: number;

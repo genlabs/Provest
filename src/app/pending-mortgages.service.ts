@@ -15,14 +15,14 @@ export class PendingMortgagesService {
   	}
 
   	postMortgage(id:number, investedAmount:number){
-  		var pendingMortgage = this.mortgagesService.getMortgageById(id);
-  		pendingMortgage.status = 'pending';
-  		pendingMortgage.investedAmount = investedAmount;
-  		pendingMortgage.percentageOwned = (investedAmount/pendingMortgage.pledge)*100;
-        pendingMortgage.monthlyPayment = this.utilService.monthlyPayment(
-        	pendingMortgage.interestRate, pendingMortgage.duration,
-        	pendingMortgage.pledge);
-        pendingMortgages.push(pendingMortgage);
+  		// var pendingMortgage = this.mortgagesService.getMortgageById(id);
+  		// pendingMortgage.status = 'pending';
+  		// pendingMortgage.investedAmount = investedAmount;
+  		// pendingMortgage.percentageOwned = (investedAmount/pendingMortgage.pledge)*100;
+    //     pendingMortgage.monthlyPayment = this.utilService.monthlyPayment(
+    //     	pendingMortgage.interestRate, pendingMortgage.duration,
+    //     	pendingMortgage.pledge);
+    //     pendingMortgages.push(pendingMortgage);
   	}
 
 }
