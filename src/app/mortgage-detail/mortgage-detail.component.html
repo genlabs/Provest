@@ -28,18 +28,18 @@
         </div>
     </div>
     <div class="clearfix">
-    <div class="mortgage-profolio">
-        
-        <h3> Property Details </h3>
-        <div> <strong>Name:</strong> {{ _mortgage.property.name }}</div>
-        <div> <strong>Address:</strong> {{ _mortgage.property.address.streetAddress}}, {{ _mortgage.property.address.city }}, {{ _mortgage.property.address.country }}</div>
-         <div> <strong> Property Type </strong> {{ _mortgage.property.type }}</div>
-        <div> <strong> Market Value: </strong>${{ _mortgage.property.estimatedValue }}</div>
-        <div><strong>Property Owner financial Document: </strong> <a href="{{_mortgage.property.landlord.financialDocument }}">Download PDF</a>
-    </div>
+        <div class="mortgage-profolio">
+            <h3> Property Details </h3>
+            <div> <strong>Name:</strong> {{ _mortgage.property.name }}</div>
+            <div> <strong>Address:</strong> {{ _mortgage.property.address.streetAddress}}, {{ _mortgage.property.address.city }}, {{ _mortgage.property.address.country }}</div>
+             <div> <strong> Property Type </strong> {{ _mortgage.property.type }}</div>
+            <div> <strong> Market Value: </strong>${{ _mortgage.property.estimatedValue }}</div>
+            <div><strong>Property Owner financial Document: </strong> <a href="{{_mortgage.property.landlord.financialDocument }}">Download PDF</a>
+        </div>
         <div class="yield">
-            <h3> Yield: {{ _mortgage.interestRate}}%  </h3>
-            <h4> Investment Term: {{ _mortgage.duration }} years </h4>
+            <h3> Investment Information </h3>
+            <div><strong>Yield:</strong> {{ _mortgage.interestRate}}%  </div>
+            <div> <strong>Investment Term:</strong> {{ _mortgage.duration }} years </div>
         </div>
     </div>
 
