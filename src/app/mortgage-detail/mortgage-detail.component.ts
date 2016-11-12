@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Mortgage } from '../mortgage';
 import { MortgagesService } from '../mortgages.service';
+import { PendingMortgagesService} from '../pending-mortgages.service';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class MortgageDetailComponent implements OnInit {
     private _invest:boolean;
 
     constructor( private route: ActivatedRoute, private router: Router, 
-        private mortgageService:MortgagesService) { }
+        private mortgageService:MortgagesService , private pendService:PendingMortgagesService) { }
 
     ngOnInit() {
        this._invest = false;
@@ -49,6 +50,7 @@ export class MortgageDetailComponent implements OnInit {
 
     commit(id:number) {
         console.log(id);
+        this.pendService.postMortgage(id, 100000);
     }
 
 }

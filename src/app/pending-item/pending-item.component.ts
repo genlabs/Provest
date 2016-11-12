@@ -19,9 +19,9 @@ export class PendingItemComponent implements OnInit {
 
   ngOnInit() {
 
-  	   console.log(this.pendingService.getPendingMortgages());
-  	  this.pendingService.postMortgage(1,1000);
-  	   console.log(this.pendingService.getPendingMortgages());
+  	   	console.log(this.pendingService.getPendingMortgages());
+  	  	//this.pendingService.postMortgage(1,1000);
+  	   	this._pendingPortfolio = this.pendingService.getPendingMortgages();
   	// this.subscription = this.pendingService.postAnnounce.subscribe(
   	// 	id => {
 

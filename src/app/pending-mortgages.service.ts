@@ -4,6 +4,7 @@ import {UtilService} from './util.service';
 import {Subject} from 'rxjs/Subject';
 import { PendingMortgages } from './pending-mortgages';
 
+
 var pendingMortgages = [];
 
 @Injectable()
