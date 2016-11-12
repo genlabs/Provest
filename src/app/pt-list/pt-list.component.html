@@ -1,3 +1,6 @@
+<div *ngIf="(mortgages | listing).length == 0">
+    No available investment plan found.  Please check your profolio for your current investment plan.
+</div>
 <ul>
     <li *ngFor="let mortgage of mortgages | listing" class="pt-item">
         <pt-item [mortgage]=mortgage></pt-item>

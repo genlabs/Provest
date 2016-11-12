@@ -55,6 +55,10 @@
         <button class="btn btn-success" (click)="invest()">Invest on this property</button>
     </div>
     <div class="invest-amount" [ngClass]='{"block": _invest, "hide":!_invest }'>
+        <div class="form-group">
+        <label for="Invest Amount">Invest Amount (minimum: 50k)</label>
+        <input type="amount" class="form-control" id="investAmount" placeholder="Invest Amount" [(ngModel)]="pledgeAmount">
+      </div>
          <button class="btn btn-success" (click)="commit(_mortgage.mId)">Invest</button>
         <button class="btn btn-danger" (click)="cancel()">Cancel</button>
     </div>
