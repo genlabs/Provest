@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 
+import { PtListComponent } from './pt-list/pt-list.component';
+import { PtItemComponent } from './pt-item/pt-item.component';
+import { MortgagesService } from './mortgages.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
     PlatformComponent,
     HomeComponent,
     ContactUsComponent,
+    PtListComponent,
+    PtItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,9 @@ import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
     routing
   ],
   providers: [
-    appRoutingProviders, NgbCarouselConfig
+    appRoutingProviders,
+    NgbCarouselConfig,
+    MortgagesService
   ],
   bootstrap: [AppComponent]
 })

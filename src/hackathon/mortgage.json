@@ -5,8 +5,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "4%",
-    "duration" : "5 years",
+    "interestRate" : 4,
+    "duration" : 5,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -59,8 +59,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "3.5%",
-    "duration" : "4 years",
+    "interestRate" : 3.5,
+    "duration" : 4,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -111,8 +111,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "5.2%",
-    "duration" : "8 years",
+    "interestRate" : 5.2,
+    "duration" : 8,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -163,8 +163,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "3%",
-    "duration" : "2 years",
+    "interestRate" : 3,
+    "duration" : 2,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -215,8 +215,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 5000000,
-    "interestRate" : "4.3%",
-    "duration" : "4 years",
+    "interestRate" : 4.3,
+    "duration" : 4,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -268,8 +268,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "6%",
-    "duration" : "10 years",
+    "interestRate" : 6,
+    "duration" : 10,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -320,8 +320,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 1500000,
-    "interestRate" : "4%",
-    "duration" : "5 years",
+    "interestRate" : 4,
+    "duration" : 5,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -372,8 +372,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "4%",
-    "duration" : "5 years",
+    "interestRate" : 4,
+    "duration" : 5,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
@@ -424,8 +424,8 @@
     "created_time": "2016-08-02T21:27:44+0000",
     "updated_time": "2016-08-02T21:27:44+0000",
     "appraisalValue" : 50000000,
-    "interestRate" : "4%",
-    "duration" : "5 years",
+    "interestRate" : 4,
+    "duration" : 5,
     "listingDate" : {
          "startDate": "2016-11-1",
          "endDate": "2016-12-12"
