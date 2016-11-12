@@ -1,0 +1,53 @@
+
+
+.myInvestedMortgages{
+	list-style-type: none;
+
+}
+
+.myMortgage{
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 10px;
+	height: 35vh;
+	position: relative;
+}
+
+.propertyImg{
+	position: absolute;
+	left: 1%;
+	top: 5%;
+	width: 35%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+.performance{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	width: 60%;
+	height: 60%;
+}
+
+.propertyName{
+	position: absolute;
+	top: 85%;
+	left: 2.5%;	
+	font-size: 1.2em;
+}
+
+.investedAmount{
+	position: absolute;
+	top: 85%;
+	left: 70%;	
+	font-size: 0.8em;
+}
+
+.percentageOwned{
+
+}
+
+.monthlyPayment{
+
+}

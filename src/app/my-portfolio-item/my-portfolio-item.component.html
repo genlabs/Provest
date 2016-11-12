@@ -1,9 +1,16 @@
 
-<div class="pt-wrapper">
-    <div class="pt-item-image">
-        <img src="{{_myPortfolio.property.images[0]}}" alt="">
-    </div>
-    <div class="pt-item-description">
-        {{_myPortfolio.interestRate}}
-    </div>
-</div>
+
+<ul class="myInvestedMortgages">  
+  <li class="myMortgage" *ngFor="let portfolio of _myPortfolio">
+  	<img class="propertyImg" src="hackathon/img/mid1.jpg">
+  	<!-- <img class="propertyImg" src="portfolio.property.images[0]"> -->
+  	<h4 class="propertyName"> {{ portfolio.property.name}} </h4>
+<!--   	<h4 class="landlord"> {{portfolio.property.landlord.name}} </h4> -->
+    <h5 class="investedAmount"> Amount you have invested: {{ portfolio.investedAmount}} </h5>
+    <p class="percentageOwned"> Percentage you are owning: {{ portfolio.percentageOwned}} </p>
+	<p class="monthlyPayment"> Monthly received payment: {{portfolio.monthlyPayment}} </p>
+	<p class="interestRate"> Monthly Interest Rate: {{portfolio.interestRate}} </p>
+	<!-- <img class="performance" src="portfolio.performance"> -->
+	<img class="performance" src="hackathon/img/performance1.jpg">
+  </li>
+<ul>  
