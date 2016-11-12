@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Mortgage } from '../mortgage';
 import { MortgagesService } from '../mortgages.service';
+import { PendingMortgagesService } from '../pending-mortgages.service';
 
 
 @Component({
@@ -17,12 +18,13 @@ export class MortgageDetailComponent implements OnInit {
     private _mortgage:Mortgage;
     private _dayleft:number;
     private _invest:boolean;
+    private pledgeAmount:number;
 
-    constructor( private route: ActivatedRoute, private router: Router, 
-        private mortgageService:MortgagesService) { }
+    constructor(private route:ActivatedRoute, private router:Router, private mortgageService:MortgagesService, private pendingService:PendingMortgagesService) { }
 
     ngOnInit() {
        this._invest = false;
+       this.pledgeAmount = 50000;
        this.sub = this.route.params.subscribe(params => {
            this.id = +params['mId']; // (+) converts string 'id' to a number
            this._mortgage = this.mortgageService.getMortgageById(this.id);
@@ -48,7 +50,17 @@ export class MortgageDetailComponent implements OnInit {
     }
 
     commit(id:number) {
-        console.log(id);
+        
+        if (this.pledgeAmount < 50000) {
+            window.alert('Minimum investment requirment: $50000');
+            return;
+        }
+        else 
+        {
+            this.pendingService.postMortgage(id, this.pledgeAmount);
+            this.router.navigate(['/myPortfolio']);
+        }
+
     }
 
 }
