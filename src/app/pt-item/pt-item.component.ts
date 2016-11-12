@@ -68,13 +68,13 @@ export class PtItemComponent implements OnInit {
 }
   }
 
-  // @Input()
-  // set mortgage(p:Mortgage) {
-  //     this._mortgage = p;
-  // }
+  @Input()
+  set mortgage(p:Mortgage) {
+      this._mortgage = p;
+  }
 
-  // get mortgage() {
-  //     return this._mortgage;
-  // }
+  get mortgage() {
+      return this._mortgage;
+  }
 
 }
