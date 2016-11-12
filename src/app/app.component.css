@@ -1,32 +1,4 @@
-
-
-#backDropForLogo{
-	margin-top: 0%;
-	width: 100vw;
-	height: 20vh;
-	background-color: #FF4500;
-	position: relative;
-}
-
 #mainLogo{
-	width: 20%;
-	height: 100%;
-	position: absolute;
-	left: 5%;
-}
-
-#navigation{
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-	position: absolute;
-	left: 50%;
-}
-
-ul#horizontal-list {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
-	}
-	ul#horizontal-list li {
-		display: inline;
+	width: 40vw;
+	height: 30vh;
 }

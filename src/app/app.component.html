@@ -1,17 +1,5 @@
-
-<div id="backDropForLogo">
-	<img id="mainLogo" src="{{logo}}">
-
-	<div id="navigation">
-	    <nav>
-	      <ul id="horizontal-list">
-	        <li><a routerLink="/home">About</a></li>
-	        <li><a routerLink="/platform">Mortgages</a></li>
-	        <li><a routerLink="/myPortfolio">My Portfolio</a></li>
-	        <li><a routerLink="/contactUs">Contact</a></li>
-	      </ul>
-	    </nav>
-    	<router-outlet></router-outlet>
-	</div>
-</div>
-
+<h1>
+  {{title}}
+</h1>
+<img id="mainLogo" src="{{logo}}">
+<router-outlet></router-outlet>
