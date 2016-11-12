@@ -1,10 +1,19 @@
 
-<div class="pt-wrapper">
+<a class="pt-wrapper clearfix" routerLink="platform/{{_mortgage.mId}}">
     <div class="pt-item-image">
         <img src="{{_mortgage.property.images[0]}}" alt="">
     </div>
     <div class="pt-item-description">
-        {{_mortgage.interestRate}}
+        <h3 class="pt-item-title"> {{ _mortgage.property.name }} </h3>
+        <div class="pt-item-des">
+            <span>Country: {{ _mortgage.property.address.country}}</span>
+            <span>Interest Rate Earn (apr.): {{_mortgage.interestRate}} %</span>
+        </div>
+        <span>Pledged Amount: {{_mortgage.accumulatedFund.amount}}</span>
+        <span>Backer: {{ _mortgage.accumulatedFund.numOfParticipants}}</span>
+        <span>{{_mortgage.pledge}}</span>
+        
+      
     </div>
-</div>
+</a>
 

@@ -1,0 +1,21 @@
+a.pt-wrapper {
+    position: relative;
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+    
+    border: 1px solid #d3d3d3;
+    padding:0;
+    margin: 0px 0 20px 0;
+    height: 300px;
+}
+
+.pt-item-image {
+    float: left;
+    width: 50%;
+}
+
+.pt-item-description {
+    float: left;
+    width: 50%;
+}
