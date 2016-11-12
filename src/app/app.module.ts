@@ -21,6 +21,8 @@ import { MyPortfolioItemComponent } from './my-portfolio-item/my-portfolio-item.
 import { CurrentUserService } from './current-user.service';
 import { ListingPipe } from './listing.pipe';
 
+import { nvD3 } from 'ng2-nvd3';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { ListingPipe } from './listing.pipe';
     GoogleMapComponent,
     MyPortfolioItemComponent,
     ListingPipe,
+    nvD3
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,47 @@
-<p>
-  mortgage-detail works!
-</p>
+<div class="mortgage-detail">
+    <div class="clearfix">
+        <div class="carosel">
+            <ngb-carousel>
+              <template ngbSlide *ngFor="let image of _mortgage.property.images">
+                <img src="image" alt="{{ _mortgage.property.name }}">
+                <div class="carousel-caption">
+                  <h3>{{ _mortgage.property.name }}</h3>
+                  <p> {{ _mortgage.property.address.streetAdress }} </p>
+                  <p>  {{ _mortgage.property.address.city }},  {{ _mortgage.property.address.country }} </p>
+                </div>
+              </template>
+            </ngb-carousel>
+        </div>
+        <div class="sumbox">
+            <div class="investor">
+                <h2>{{ _mortgage.accumulatedFund.numOfParticipants }}</h2>
+                <span>Investors</span>
+            </div>
+            <div class="amount">
+                <h2>${{ _mortgage.accumulatedFund.amount }}</h2>
+                <span>pledge of ${{ _mortgage.pledge}} </span>
+            </div>
+            <div class="daystogo">
+                <h2>29</h2>
+                <span>days to go </span>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+    <div class="mortgage-profolio">
+        
+        <h3> Property Details </h3>
+        <div> <strong>Name:</strong> {{ _mortgage.property.name }}</div>
+        <div> <strong>Address:</strong> {{ _mortgage.property.address.streetAddress}}, {{ _mortgage.property.address.city }}, {{ _mortgage.property.address.country }}</div>
+         <div> <strong> Property Type </strong> {{ _mortgage.property.type }}</div>
+        <div> <strong> Market Value: </strong>${{ _mortgage.property.estimatedValue }}</div>
+        <div><strong>Property Owner financial Document: </strong> <a href="{{_mortgage.property.landlord.financialDocument }}">Download PDF</a>
+    </div>
+        <div class="yield">
+            <h3> Yield: {{ _mortgage.interestRate}}%  </h3>
+            <h4> Investment Term: {{ _mortgage.duration }} years </h4>
+        </div>
+    </div>
+
+
+</div>
