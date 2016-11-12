@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PtListComponent } from './pt-list/pt-list.component';
 import { PtItemComponent } from './pt-item/pt-item.component';
+import { MortgagesService } from './mortgages.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PtItemComponent } from './pt-item/pt-item.component';
     routing
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    MortgagesService
   ],
   bootstrap: [AppComponent]
 })
