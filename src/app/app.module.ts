@@ -37,7 +37,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
           title: 'Mortgages List'
         }
       },
-      { path: '', component: HomeComponent }
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
     ])
   ],
   providers: [],
