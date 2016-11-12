@@ -1,5 +1,5 @@
 
-<a class="pt-wrapper clearfix" routerLink="platform/{{_mortgage.mId}}">
+<a class="pt-wrapper clearfix" [routerLink]="['/mortgage' , _mortgage.mId]">
     <div class="pt-item-image">
         <img src="{{_mortgage.property.images[0]}}" alt="">
     </div>

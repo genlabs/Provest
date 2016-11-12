@@ -1,14 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
-export class MortgagesService {
-
-  constructor() { }
-
-
-  getMortgages() {
-
-      return [{
+var mortgages = [{
             "mId" : 1,
             "pledge" : 1000000,
             "status" : "listing", //change to onhold when submitted deposit
@@ -480,6 +472,19 @@ export class MortgagesService {
             }
         }];
 
+@Injectable()
+export class MortgagesService {
 
+  constructor() { }
+
+
+  getMortgages() {
+      return mortgages;
+  }
+
+  getMortgageById(id:number) {
+      return mortgages.filter( mortgage => {
+          return mortgage.mId == id;
+      })[0];
   }
 }

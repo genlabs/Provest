@@ -1,0 +1,35 @@
+.carosel {
+    width: 50%;
+    float: left;
+}
+
+.sumbox {
+    width: 50%;
+    float: left;
+    padding: 10px 10px;
+    text-align: right;
+}
+.investor, .amount, .daystogo {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2 {
+    line-height: 40px;
+    font-size: 3.6em;
+    font-weight: bold;
+}
+
+.investor > span, .amount > span, .daystogo > span {
+    font-size: 1em;
+    color: #303030;
+}
+
+.mortgage-profolio {
+    padding: 20px 10px;
+  
+}
+
+.yield {
+   margin: 10px;
+}

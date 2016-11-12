@@ -14,10 +14,7 @@ const appRoutes:Routes = [
     { path: 'contactUs', component: ContactUsComponent },
     {
         path: 'platform',
-        component: PlatformComponent,
-        data: {
-        title: 'Mortgages List'
-    }
+        component: PlatformComponent
     },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo:"/home", pathMatch: 'full' }
