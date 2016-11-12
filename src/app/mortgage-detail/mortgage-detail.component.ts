@@ -15,11 +15,13 @@ export class MortgageDetailComponent implements OnInit {
     private sub: any;
     private _mortgage:Mortgage;
     private _dayleft:number;
+    private _invest:boolean;
 
     constructor( private route: ActivatedRoute, private router: Router, 
         private mortgageService:MortgagesService) { }
 
     ngOnInit() {
+       this._invest = false;
        this.sub = this.route.params.subscribe(params => {
            this.id = +params['mId']; // (+) converts string 'id' to a number
            this._mortgage = this.mortgageService.getMortgageById(this.id);
@@ -34,6 +36,10 @@ export class MortgageDetailComponent implements OnInit {
 
     ngOnDestroy() {
         this.sub.unsubscribe();
+    }
+
+    invest() {
+        this._invest = true;
     }
 
 

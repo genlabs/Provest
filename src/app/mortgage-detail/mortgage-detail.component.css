@@ -1,6 +1,13 @@
 .carosel {
     width: 50%;
     float: left;
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.carosel img {
+    width: 100%;
+    min-height: 260px;
 }
 
 .sumbox {
@@ -49,4 +56,26 @@ h2 {
     font-size: 0.8em;
     width: auto;
 
+}
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.invest-amount {
+    border: 1px solid #ddd;
+    background-color: #ccc;
+
+    width: 100%;
+    border-radius: 5px;
+    height: 160px;
+    padding: 10px;
+}
+
+.mortgage-detail {
+      margin-bottom: 200px;
 }

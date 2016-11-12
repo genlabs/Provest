@@ -27,7 +27,6 @@ import { PendingItemComponent } from './pending-item/pending-item.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { UtilService }  from './util.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,

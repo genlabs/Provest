@@ -18,8 +18,8 @@
                 <span>Investors</span>
             </div>
             <div class="amount">
-                <h2>${{ _mortgage.accumulatedFund.amount }}</h2>
-                <span>pledge of ${{ _mortgage.pledge}} </span>
+                <h2>{{ _mortgage.accumulatedFund.amount | currency:'USD':true:'1.0-0' }}</h2>
+                <span>pledge of {{ _mortgage.pledge | currency:'USD':true:'1.0-0'}} </span>
             </div>
             <div class="daystogo">
                 <h2>{{ _dayleft | number:'1.0-0'}}</h2>
@@ -33,7 +33,7 @@
             <div> <strong>Name:</strong> {{ _mortgage.property.name }}</div>
             <div> <strong>Address:</strong> {{ _mortgage.property.address.streetAddress}}, {{ _mortgage.property.address.city }}, {{ _mortgage.property.address.country }}</div>
              <div> <strong> Property Type </strong> {{ _mortgage.property.type }}</div>
-            <div> <strong> Market Value: </strong>${{ _mortgage.property.estimatedValue }}</div>
+            <div> <strong> Market Value: </strong>{{ _mortgage.property.estimatedValue | currency:'USD':true:'1.0-0' }}</div>
             <div><strong>Property Owner financial Document: </strong> <a href="{{_mortgage.property.landlord.financialDocument }}">Download PDF</a>
         </div>
         <div class="yield">
@@ -51,8 +51,13 @@
         <h3>Expected Return </h3>
         <bar-chart [mortgage]="_mortgage"></bar-chart>
     </div> 
-    <div class="invest">
-        <button class="btn btn-success">Invest on this property</button>
+    <div class="invest" [ngClass]='{"block": !_invest, "hide":_invest }'>
+        <button class="btn btn-success" (click)="invest()">Invest on this property</button>
+    </div>
+    <div class="invest-amount" [ngClass]='{"block": _invest, "hide":!_invest }'>
+
+        <button class="btn btn-success">Invest</button>
+        <button class="btn btn-danger">Cancel</button>
     </div>
 
 </div>
