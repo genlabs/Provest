@@ -68,3 +68,13 @@
 .highlighted{
 	font-weight: bold;
 }
+
+.pie{
+	margin-top: 2%;
+	position: relative;
+}
+
+#pieTitle{
+	position: absolute;
+	top:50%;
+}

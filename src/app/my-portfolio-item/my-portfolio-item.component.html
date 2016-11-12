@@ -1,18 +1,30 @@
 
-<div style="display: block">
-  <canvas baseChart
-         [data]="totalMoneyEarnedFromEachPlan"
-         [labels]="propertyName"
-         chartType="doughnut"></canvas>
+<div class="row">
+	<div class="col-md-6">
+		<div class="pie" style="display: block">
+			<canvas baseChart
+		         [data]="totalMoneyInvestedForEachPlan"
+		         chartType="pie"></canvas>
+		  <h5 id="pieTitle"> Total Money Invested: ${{totalInvestmentAmount}} </h5>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="pie" style="display: block">
+		  <canvas baseChart
+		         [data]="totalMoneyEarnedFromEachPlan"
+		         chartType="doughnut"></canvas>
+		  <h5 id="pieTitle"> Total Money Received: ${{totalCollectedAmount}} </h5>
+		</div>
+	</div>
 </div>
 
 
 <ul class="myInvestedMortgages">  
   <li class="myMortgage" *ngFor="let portfolio of _myPortfolio">
   	<img class="propertyImg" src="hackathon/img/mid1.jpg">
-  	<!-- <img class="propertyImg" src="portfolio.property.images[0]"> -->
+
   	<h4 class="propertyName"> {{ portfolio.property.name}} </h4>
-<!--   	<h4 class="landlord"> {{portfolio.property.landlord.name}} </h4> -->
+
     <p class="investedAmount"> <strong> Amount you have invested: </strong> 
     ${{ portfolio.investedAmount}} </p>
     <p class="percentageOwned"> <strong> Percentage you are owning: </strong> {{ portfolio.percentageOwned}}% </p>
