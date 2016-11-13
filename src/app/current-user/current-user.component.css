@@ -1,0 +1,22 @@
+/*img{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+}*/
+
+/*.profile{
+	width: 40vw;
+	height: 10vh;
+	margin-left: 20%;
+}*/
+
+
+a{
+	text-decoration: underline;
+	font-weight: bold;
+	color: black;
+	margin-top: 40%;
+}

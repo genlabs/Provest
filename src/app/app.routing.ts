@@ -22,6 +22,7 @@ const appRoutes:Routes = [
     },
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo:"/home", pathMatch: 'full' }
+
 ];
 
 export const appRoutingProviders:any[] = [

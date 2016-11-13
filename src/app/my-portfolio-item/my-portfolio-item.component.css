@@ -1,6 +1,7 @@
 
 
 .myInvestedMortgages{
+	margin-top: 5%;
 	list-style-type: none;
 
 }
@@ -77,7 +78,7 @@
 #pieTitle{
 	position: absolute;
 	left: 30%;
-	top:50%;
+	top:60%;
 	font-size: 0.63em;
 }
 

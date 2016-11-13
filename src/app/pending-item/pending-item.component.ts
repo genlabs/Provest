@@ -14,18 +14,20 @@ export class PendingItemComponent implements OnInit {
 	private _pendingPortfolio= [];
 	//private hasNewPost:boolean;
 	subscription:Subscription;
+  private daysleft:number[] = [];
 
   constructor(private pendingService:PendingMortgagesService) { }
 
   ngOnInit() {
 
-  	   console.log(this.pendingService.getPendingMortgages());
-  	  this.pendingService.postMortgage(1,1000);
-  	   console.log(this.pendingService.getPendingMortgages());
-  	// this.subscription = this.pendingService.postAnnounce.subscribe(
-  	// 	id => {
+  	   	console.log(this.pendingService.getPendingMortgages());
+  	  	//this.pendingService.postMortgage(1,1000);
+  	   	this._pendingPortfolio = this.pendingService.getPendingMortgages();
+        
+   
+          
 
-  	// 	})
+        
   }
 
 

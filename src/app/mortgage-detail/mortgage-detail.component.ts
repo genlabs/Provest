@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Mortgage } from '../mortgage';
 import { MortgagesService } from '../mortgages.service';
-import { PendingMortgagesService } from '../pending-mortgages.service';
+import { PendingMortgagesService} from '../pending-mortgages.service';
 
 
 @Component({
@@ -20,7 +20,9 @@ export class MortgageDetailComponent implements OnInit {
     private _invest:boolean;
     private pledgeAmount:number;
 
-    constructor(private route:ActivatedRoute, private router:Router, private mortgageService:MortgagesService, private pendingService:PendingMortgagesService) { }
+    constructor( private route: ActivatedRoute, private router: Router, 
+        private mortgageService:MortgagesService , private pendService:PendingMortgagesService) { }
+
 
     ngOnInit() {
         this._mortgage = this.route.snapshot.data['_mortgage'];
@@ -61,10 +63,9 @@ export class MortgageDetailComponent implements OnInit {
         }
         else 
         {
-            this.pendingService.postMortgage(id, this.pledgeAmount);
+            this.pendService.postMortgage(id, this.pledgeAmount);
             this.router.navigate(['/myPortfolio']);
         }
-
     }
 
 }

@@ -2,3 +2,49 @@ h3{
 	color: #C0C0C0;
 	font-style: italic;
 }
+
+img{
+	position: absolute;
+	left: 1%;
+	top: 5%;
+	width: 35%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+.propertyName{
+	position: absolute;
+	top: 88%;
+	left: 6.5%;	
+	font-size: 1.2em;
+	color: #C0C0C0;
+}
+
+.mypendingMortgages{
+	list-style-type: none;
+}
+
+.myMortgage{
+	margin-top: 5%;
+	border: 1px solid #C0C0C0;
+	border-radius: 10px;
+	height: 40vh;
+	position: relative;
+}
+
+.progressBar{
+	position: absolute;
+	top: 5%;
+	left: 45%;
+	width: 50%;
+	height: 60%;
+	color: #C0C0C0;
+}
+
+.pledge{
+	color: red;
+}
+
+.accumulatedAmount{
+	color: red;
+}

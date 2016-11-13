@@ -4,17 +4,19 @@ import {UtilService} from './util.service';
 import {Subject} from 'rxjs/Subject';
 import { PendingMortgages } from './pending-mortgages';
 
-var pendingMortgages = [];
+
+
 
 @Injectable()
 export class PendingMortgagesService {
 
+  private pendingMortgages:PendingMortgages[] = [];
 	private postAnnouncement = new Subject<number>();
 	postAnnounce = this.postAnnouncement.asObservable();
   constructor(private mortgagesService:MortgagesService, private utilService:UtilService) { }
    
    	getPendingMortgages() {
-   	   return pendingMortgages;
+   	   return this.pendingMortgages;
   	}
 
   	postMortgage(id:number, investedAmount:number){
@@ -28,7 +30,7 @@ export class PendingMortgagesService {
           pendingMortgage.monthlyPayment = this.utilService.monthlyPayment(
           pendingMortgage.interestRate, pendingMortgage.duration,
           pendingMortgage.pledge);
-          pendingMortgages.push(pendingMortgage);
+          this.pendingMortgages.push(pendingMortgage);
         }
 
       )
