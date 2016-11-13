@@ -32,20 +32,6 @@ img{
 	position: relative;
 }
 
-/*.investedAmount{
-	position: absolute;
-	top: 30%;
-	left: 40%;	
-	font-size: 0.9em;
-}
-
-.percentageOwned{
-	position: absolute;
-	top: 40%;
-	left: 40%;	
-	font-size: 0.9em;	
-}*/
-
 .progressBar{
 	position: absolute;
 	top: 5%;

@@ -3,6 +3,8 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  //background-color:  #d3d3d3;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -35,7 +37,8 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    //max-width: 65vw;
+    max-width: 780px;
   }
 }
 .container-narrow > hr {

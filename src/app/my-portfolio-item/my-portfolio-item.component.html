@@ -3,6 +3,7 @@
 	<div class="col-md-6">
 		<div class="pie" style="display: block">
 			<canvas baseChart
+				 [labels]="propertyName"
 		         [data]="totalMoneyInvestedForEachPlan"
 		         chartType="pie"></canvas>
 		  <h5 id="pieTitle"> Total Money Invested: ${{totalInvestmentAmount}} </h5>
@@ -11,6 +12,7 @@
 	<div class="col-md-6">
 		<div class="pie" style="display: block">
 		  <canvas baseChart
+		  		[labels]="propertyName"
 		         [data]="totalMoneyEarnedFromEachPlan"
 		         chartType="doughnut"></canvas>
 		  <h5 id="pieTitle"> Total Money Received: ${{totalCollectedAmount}} </h5>
