@@ -23,22 +23,26 @@ export class MortgageDetailComponent implements OnInit {
     constructor(private route:ActivatedRoute, private router:Router, private mortgageService:MortgagesService, private pendingService:PendingMortgagesService) { }
 
     ngOnInit() {
+        this._mortgage = this.route.snapshot.data['_mortgage'];
        this._invest = false;
        this.pledgeAmount = 50000;
-       this.sub = this.route.params.subscribe(params => {
-           this.id = +params['mId']; // (+) converts string 'id' to a number
-           this._mortgage = this.mortgageService.getMortgageById(this.id);
-           let start = new Date().getTime();
-           let end = new Date(this._mortgage.listingDate.endDate).getTime();
-           this._dayleft = (end - start)/(24*60*60*1000);
-        
-
-       });
+       // this.sub = this.route.params.subscribe(params => {
+       //     this.id = +params['mId']; // (+) converts string 'id' to a number
+       //     this.mortgageService.getMortgageById(this.id).then(
+       //         mortgage => {
+       //             console.log(mortgage);
+                   //this._mortgage = mortgage;
+                   let start = new Date().getTime();
+                   let end = new Date(this._mortgage.listingDate.endDate).getTime();
+                   this._dayleft = (end - start)/(24*60*60*1000);
+           //     }
+           // )
+      // });
        // In a real app: dispatch action to load the details here.
     }
 
     ngOnDestroy() {
-        this.sub.unsubscribe();
+        
     }
 
     invest() {

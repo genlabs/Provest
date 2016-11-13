@@ -6,10 +6,14 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { PlatformComponent } from './platform/platform.component';
 import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
+import { MortgageResolveService } from './mortgage-resolve.service';
 
 const appRoutes:Routes = [
-    { path: 'mortgage/:mId', component: MortgageDetailComponent },
+    { path: 'mortgage/:mId', component: MortgageDetailComponent,
+        resolve: {
+          _mortgage: MortgageResolveService
+        } 
+    },
     { path: 'myPortfolio', component: MyPortfolioComponent },
     { path: 'contactUs', component: ContactUsComponent },
     {

@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Mortgage } from '../mortgage';
 import { UtilService } from '../util.service';
 
-
+import 'rxjs/Rx';
 
 @Component({
   selector: 'bar-chart',

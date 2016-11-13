@@ -11,7 +11,11 @@ export class PtListComponent implements OnInit {
   constructor(private mortgagesService:MortgagesService) { }
 
   ngOnInit() {
-      this.mortgages = this.mortgagesService.getMortgages();
+      this.mortgagesService.getMortgages().then(
+          mortgages => {
+              this.mortgages = mortgages;
+          } 
+       )
   }    
 
 }
