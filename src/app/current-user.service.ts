@@ -9,8 +9,8 @@ export class CurrentUserService {
   	return {
 	    "_id" : 1,
 	    "name" : {
-	        "first" : "Stephen",
-	        "last" : "Curry"
+	        "first" : "Jordan",
+	        "last" : "Yew"
 	    },
 	    "birth" : "2010-08-02T21:27:44+0000",
 	    "created_time": "2016-08-02T21:27:44+0000",
