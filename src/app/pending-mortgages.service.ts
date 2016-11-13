@@ -42,4 +42,13 @@ export class PendingMortgagesService {
   		this.postAnnouncement.next(id);
   	}
 
+    isMortgagePending(id:number) {
+      for (var i=0; i < this.pendingMortgages.length; i++) {
+        if (this.pendingMortgages[i].mId == id) {
+          return true;
+        }
+      }
+      return false;
+    }
+
 }
