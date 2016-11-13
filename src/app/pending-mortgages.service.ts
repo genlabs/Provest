@@ -5,28 +5,36 @@ import {Subject} from 'rxjs/Subject';
 import { PendingMortgages } from './pending-mortgages';
 
 
-var pendingMortgages = [];
+
 
 @Injectable()
 export class PendingMortgagesService {
 
+  private pendingMortgages:PendingMortgages[] = [];
 	private postAnnouncement = new Subject<number>();
 	postAnnounce = this.postAnnouncement.asObservable();
   constructor(private mortgagesService:MortgagesService, private utilService:UtilService) { }
    
    	getPendingMortgages() {
-   	   return pendingMortgages;
+   	   return this.pendingMortgages;
   	}
 
   	postMortgage(id:number, investedAmount:number){
-  		var pendingMortgage:PendingMortgages = <PendingMortgages> this.mortgagesService.getMortgageById(id);
-      pendingMortgage.status = 'pending';
-  		pendingMortgage.investedAmount = investedAmount;
-  		pendingMortgage.percentageOwned = (investedAmount/pendingMortgage.pledge)*100;
-        pendingMortgage.monthlyPayment = this.utilService.monthlyPayment(
-        	pendingMortgage.interestRate, pendingMortgage.duration,
-        	pendingMortgage.pledge);
-        pendingMortgages.push(pendingMortgage);
+
+      this.mortgagesService.getMortgageById(id).then(
+        mortgage =>  {
+          var pendingMortgage:PendingMortgages = <PendingMortgages> mortgage;
+          pendingMortgage.status = 'pending';
+          pendingMortgage.investedAmount = investedAmount;
+          pendingMortgage.percentageOwned = (investedAmount/pendingMortgage.pledge)*100;
+          pendingMortgage.monthlyPayment = this.utilService.monthlyPayment(
+          pendingMortgage.interestRate, pendingMortgage.duration,
+          pendingMortgage.pledge);
+          this.pendingMortgages.push(pendingMortgage);
+        }
+
+      )
+  		
 
   	}
 
