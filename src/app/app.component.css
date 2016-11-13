@@ -32,8 +32,12 @@ ul#horizontal-list {
 }
 
 .logo{
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
+}
+
+.header.clearfix{
+	background-color: #7FFFD4;
 }
 
 

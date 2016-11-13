@@ -37,8 +37,8 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    //max-width: 65vw;
-    max-width: 780px;
+    max-width: 65vw;
+    //max-width: 780px;
   }
 }
 .container-narrow > hr {

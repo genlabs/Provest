@@ -26,13 +26,13 @@ export class PendingItemComponent implements OnInit {
         
         var one_day=1000*60*60*24;
 
-        for(var i=0; i< this._pendingPortfolio.length; i++){
-          var date1 = this._pendingPortfolio[i].listingDate.startDate.getTime();
-          var date2 = this._pendingPortfolio[i].listingDate.endDate.getTime();
+        // for(var i=0; i< this._pendingPortfolio.length; i++){
+        //   var date1 = this._pendingPortfolio[i].listingDate.startDate.getTime();
+        //   var date2 = this._pendingPortfolio[i].listingDate.endDate.getTime();
 
-          this.daysleft.push(Math.round(date2 - date1/one_day));
+        //   this.daysleft.push(Math.round(date2 - date1/one_day));
 
-        }
+        // }
           
 
         
